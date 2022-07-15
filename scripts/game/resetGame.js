@@ -1,4 +1,4 @@
-import { campo } from './insert.js'
+import { campo } from './gameIndex.js'
 import { play } from '../main.js'
 
 export function resetGame() {

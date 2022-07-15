@@ -1,6 +1,6 @@
-import { playerOne, playerTwo } from '../menu/Users.js'
+import { playerOne, playerTwo } from '../menu/menuIndex.js'
 
-import { playerLabel } from './sortPlayer.js'
+import { playerLabel } from './gameIndex.js'
 
 export function changeWhoPlay() {
   if (playerOne.isPlaying) {

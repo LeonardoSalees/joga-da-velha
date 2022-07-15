@@ -1,6 +1,6 @@
-import { campo } from '../game/insert.js'
-import { playerOne, playerTwo } from '../menu/Users.js'
-import { whenFinish } from './whenFinish.js'
+import { campo } from '../game/gameIndex.js'
+import { playerOne, playerTwo } from '../menu/menuIndex.js'
+import { whenFinish } from './resultGameIndex.js'
 
 export let winner
 

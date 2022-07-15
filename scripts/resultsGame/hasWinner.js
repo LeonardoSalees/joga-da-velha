@@ -1,5 +1,5 @@
-import { campo } from '../game/insert.js'
-import { whoWinner } from './whoWinner.js'
+import { campo } from '../game/gameIndex.js'
+import { whoWinner } from './resultGameIndex.js'
 
 export function hasWinner() {
   if (

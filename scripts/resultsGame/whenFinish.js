@@ -1,6 +1,5 @@
-import { resetGame } from '../game/resetGame.js'
-import { buttonPlayAgain } from './playAgain.js'
-import { winner } from './whoWinner.js'
+import { resetGame } from '../game/gameIndex.js'
+import { buttonPlayAgain, winner } from './resultGameIndex.js'
 
 let containerGanhador = document.getElementById('ganhador')
 let spanWinner = document.getElementById('winner')

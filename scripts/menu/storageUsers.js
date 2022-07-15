@@ -1,4 +1,4 @@
-import { playerOne, playerTwo } from '../menu/Users.js'
+import { playerOne, playerTwo } from '../menu/menuIndex.js'
 
 const inputNamePlayerOne = document.getElementById('namePlayerOne')
 const inputNamePlayerTwo = document.getElementById('namePlayerTwo')

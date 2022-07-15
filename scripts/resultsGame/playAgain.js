@@ -1,4 +1,4 @@
-import { resetGame } from '../game/resetGame.js'
+import { resetGame } from '../game/gameIndex.js'
 
 export let buttonPlayAgain = document.getElementById('btn-playAgain')
 

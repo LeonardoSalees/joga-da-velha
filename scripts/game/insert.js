@@ -1,6 +1,6 @@
-import { playerOne, playerTwo } from '../menu/Users.js'
-import { hasWinner } from '../resultsGame/hasWinner.js'
-import { changeWhoPlay } from './changeWhoPlay.js'
+import { playerOne, playerTwo } from '../menu/menuIndex.js'
+import { hasWinner } from '../resultsGame/resultGameIndex.js'
+import { changeWhoPlay } from './gameIndex.js'
 
 export let campo = document.getElementsByTagName('input')
 
