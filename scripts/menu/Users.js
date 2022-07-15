@@ -2,14 +2,16 @@ export let playerOne = {
   name: '',
   isPlaying: false,
   form: 'X',
-  backColor: 'blue'
+  backColor: 'blue',
+  points: 0
 }
 
 export let playerTwo = {
   name: '',
   isPlaying: false,
   form: 'O',
-  backColor: 'red'
+  backColor: 'red',
+  points: 0
 }
 
 let playerOneString = localStorage.getItem('playerOne')

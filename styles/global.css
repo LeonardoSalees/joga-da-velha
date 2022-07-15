@@ -66,5 +66,5 @@ input {
 
 .inline {
   display: flex;
-  margin-block: 2rem;
+  margin-block: .2rem;
 }
