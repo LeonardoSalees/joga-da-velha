@@ -1,5 +1,19 @@
+#score {
+  width: 100vw;
+  padding: 1rem 3rem;
+  background-color: black;
+  color: white;
+}
+#score span {
+  font-size: 1.8rem;
+}
+#score .inline {
+  gap: 2rem;
+}
+
 #jogador {
   color: white;
+  background-color: black;
   padding: 0.5rem;
   width: 3rem;
   height: 40rem;
@@ -10,11 +24,11 @@ input {
   border: none;
   height: 10rem;
   font-size: 4rem;
-  color: white;
+  color: black;
 }
 
 input:disabled {
-  color: white;
+  color: black;
 }
 
 .bottom {
@@ -43,21 +57,46 @@ input:disabled {
   display: none;
 }
 .ganhador {
-  padding: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(200, 236, 129);
-  border: 1px solid black;
-  width: 30rem;
-  height: 30rem;
   position: fixed;
+  top: -1%;
+  left: -1%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b3e192;
+  border: 1px solid black;
+  border-radius: 2rem;
+  height: 0rem;
+  width: 0rem;
+
+  transition: all 2s ease;
+}
+.active {
   top: 50%;
   left: 50%;
-
-  transform: translate(-50%, -50%);
+  height: 35rem;
+  width: 35rem;
+  opacity: 1;
+  visibility: 1;
 }
-.ganhador h2 {
+#css-transition-win {
+  opacity: 0;
+  visibility: 0;
+  transition: all 2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#css-transition-win.active {
+  opacity: 1;
+  visibility: 1;
+}
+
+h2 {
   text-align: center;
   padding: 1rem;
   font-size: 3rem;

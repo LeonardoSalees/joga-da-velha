@@ -12,9 +12,9 @@ export function verifyWinner() {
     campo[1].value == campo[2].value &&
     campo[0].value != ''
   ) {
-    campo[0].style.backgroundColor = 'black'
-    campo[1].style.backgroundColor = 'black'
-    campo[2].style.backgroundColor = 'black'
+    setColorWinner(0)
+    setColorWinner(1)
+    setColorWinner(2)
     if (verifyWhoIsWinner(0) == true) {
       showMessageToWinner()
     }
@@ -23,9 +23,9 @@ export function verifyWinner() {
     campo[4].value == campo[5].value &&
     campo[3].value != ''
   ) {
-    campo[3].style.backgroundColor = 'black'
-    campo[4].style.backgroundColor = 'black'
-    campo[5].style.backgroundColor = 'black'
+    setColorWinner(3)
+    setColorWinner(4)
+    setColorWinner(5)
     if (verifyWhoIsWinner(3) == true) {
       showMessageToWinner()
     }
@@ -34,9 +34,9 @@ export function verifyWinner() {
     campo[7].value == campo[8].value &&
     campo[6].value != ''
   ) {
-    campo[6].style.backgroundColor = 'black'
-    campo[7].style.backgroundColor = 'black'
-    campo[8].style.backgroundColor = 'black'
+    setColorWinner(6)
+    setColorWinner(7)
+    setColorWinner(8)
     if (verifyWhoIsWinner(6) == true) {
       showMessageToWinner()
     }
@@ -45,9 +45,9 @@ export function verifyWinner() {
     campo[3].value == campo[6].value &&
     campo[0].value != ''
   ) {
-    campo[0].style.backgroundColor = 'black'
-    campo[3].style.backgroundColor = 'black'
-    campo[6].style.backgroundColor = 'black'
+    setColorWinner(0)
+    setColorWinner(3)
+    setColorWinner(6)
     if (verifyWhoIsWinner(0) == true) {
       showMessageToWinner()
     }
@@ -56,9 +56,9 @@ export function verifyWinner() {
     campo[4].value == campo[7].value &&
     campo[1].value != ''
   ) {
-    campo[1].style.backgroundColor = 'black'
-    campo[4].style.backgroundColor = 'black'
-    campo[7].style.backgroundColor = 'black'
+    setColorWinner(1)
+    setColorWinner(4)
+    setColorWinner(7)
     if (verifyWhoIsWinner(1) == true) {
       showMessageToWinner()
     }
@@ -67,9 +67,9 @@ export function verifyWinner() {
     campo[5].value == campo[8].value &&
     campo[2].value != ''
   ) {
-    campo[2].style.backgroundColor = 'black'
-    campo[5].style.backgroundColor = 'black'
-    campo[8].style.backgroundColor = 'black'
+    setColorWinner(2)
+    setColorWinner(5)
+    setColorWinner(8)
     if (verifyWhoIsWinner(2) == true) {
       showMessageToWinner()
     }
@@ -78,9 +78,9 @@ export function verifyWinner() {
     campo[4].value == campo[8].value &&
     campo[0].value != ''
   ) {
-    campo[0].style.backgroundColor = 'black'
-    campo[4].style.backgroundColor = 'black'
-    campo[8].style.backgroundColor = 'black'
+    setColorWinner(0)
+    setColorWinner(4)
+    setColorWinner(8)
     if (verifyWhoIsWinner(0) == true) {
       showMessageToWinner()
     }
@@ -89,13 +89,18 @@ export function verifyWinner() {
     campo[4].value == campo[6].value &&
     campo[2].value != ''
   ) {
-    campo[2].style.backgroundColor = 'black'
-    campo[4].style.backgroundColor = 'black'
-    campo[6].style.backgroundColor = 'black'
+    setColorWinner(2)
+    setColorWinner(4)
+    setColorWinner(6)
     if (verifyWhoIsWinner(2) == true) {
       showMessageToWinner()
     }
   } else if (allFieldsAreFull == true) {
     showMessageDraw()
   }
+}
+
+function setColorWinner(position) {
+  campo[position].style.backgroundColor = 'black'
+  campo[position].style.color = 'white'
 }

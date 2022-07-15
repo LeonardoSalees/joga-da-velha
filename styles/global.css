@@ -25,7 +25,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-block: 3rem;
+  padding-bottom: 1rem;
 }
 
 h1 {
@@ -66,5 +66,11 @@ input {
 
 .inline {
   display: flex;
-  margin-block: .2rem;
+  margin-block: 0.2rem;
+}
+
+.verticalLine {
+
+  width: 2px;
+  background-color: white;
 }

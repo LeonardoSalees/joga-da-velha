@@ -5,21 +5,30 @@ import { winner } from './resultGameIndex.js'
 let buttonPlayAgain = document.getElementById('btn-playAgain')
 let containerGanhador = document.getElementById('ganhador')
 let spanWinner = document.getElementById('winner')
+let contentGanhador = document.getElementById('css-transition-win')
 
 export function showMessageToWinner() {
-  containerGanhador.classList.remove('display-none')
-  containerGanhador.classList.add('ganhador')
+  addClassActive()
   spanWinner.innerText = `O(A) Ganhador(a) foi : ${winner}`
 }
 export function showMessageDraw() {
-  containerGanhador.classList.remove('display-none')
-  containerGanhador.classList.add('ganhador')
+  addClassActive()
+
   spanWinner.innerText = 'Deu empate'
 }
 
+function removeClassActive() {
+  containerGanhador.classList.remove('active')
+  contentGanhador.classList.remove('active')
+}
+
+function addClassActive() {
+  containerGanhador.classList.add('active')
+  contentGanhador.classList.add('active')
+}
+
 buttonPlayAgain.addEventListener('click', () => {
-  containerGanhador.classList.add('display-none')
-  containerGanhador.classList.remove('ganhador')
+  removeClassActive()
   resetGame()
   play()
 })

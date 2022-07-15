@@ -8,11 +8,11 @@ export function changeWhoPlay() {
     playerTwo.isPlaying = true
     playerLabel.innerText = playerTwo.name
 
-    playerLabel.style.backgroundColor = playerTwo.backColor
+  
   } else if (playerTwo.isPlaying) {
     playerOne.isPlaying = true
     playerTwo.isPlaying = false
     playerLabel.innerText = playerOne.name
-    playerLabel.style.backgroundColor = playerOne.backColor
+    
   }
 }
