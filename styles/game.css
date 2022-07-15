@@ -1,4 +1,4 @@
-#jogador span {
+#jogador {
   color: white;
   padding: 0.5rem;
   width: 3rem;
@@ -43,11 +43,14 @@ input:disabled {
   display: none;
 }
 .ganhador {
+  padding: 5rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(200, 236, 129);
   border: 1px solid black;
-  width: 20rem;
-  height: 20rem;
+  width: 30rem;
+  height: 30rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -55,6 +58,7 @@ input:disabled {
   transform: translate(-50%, -50%);
 }
 .ganhador h2 {
-  padding-bottom: 2rem;
+  text-align: center;
+  padding: 1rem;
   font-size: 3rem;
 }

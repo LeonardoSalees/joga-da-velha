@@ -1,3 +1,4 @@
+import { resetCountAllFields } from '../resultsGame/resultGameIndex.js'
 import { campo } from './gameIndex.js'
 
 export function resetGame() {
@@ -5,5 +6,6 @@ export function resetGame() {
     campo[i].value = ''
     campo[i].style.backgroundColor = 'white'
     campo[i].disabled = false
+    resetCountAllFields()
   }
 }

@@ -1,6 +1,6 @@
 import { playerOne, playerTwo } from '../menu/menuIndex.js'
-import { hasWinner } from '../resultsGame/resultGameIndex.js'
-import { changeWhoPlay } from './gameIndex.js'
+import { verifyWinner } from '../resultsGame/resultGameIndex.js'
+import { changeWhoPlay, verifyAllFields } from './gameIndex.js'
 
 export let campo = document.getElementsByTagName('input')
 
@@ -10,14 +10,16 @@ for (let i = 0; i < campo.length; i++) {
       campo[i].value = playerOne.form
       campo[i].style.backgroundColor = playerOne.backColor
       campo[i].disabled = true
-      hasWinner()
       changeWhoPlay()
+      verifyAllFields(i)
+      verifyWinner()
     } else if (playerTwo.isPlaying) {
       campo[i].value = playerTwo.form
       campo[i].style.backgroundColor = playerTwo.backColor
       campo[i].disabled = true
-      hasWinner()
       changeWhoPlay()
+      verifyAllFields(i)
+      verifyWinner()
     }
   })
 }

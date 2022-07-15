@@ -1,4 +1,3 @@
-
 export let playerOne = {
   name: '',
   isPlaying: false,
@@ -14,12 +13,9 @@ export let playerTwo = {
 }
 
 let playerOneString = localStorage.getItem('playerOne')
-let playerOneToObject = JSON.parse(playerOneString)
-playerOne.name = playerOneToObject
+
+playerOne.name = playerOneString
 
 let playerTwoString = localStorage.getItem('playerTwo')
-let playerTwoToObject = JSON.parse(playerTwoString)
+let playerTwoToObject = playerTwoString
 playerTwo.name = playerTwoToObject
-
-console.log(playerOne)
-console.log(playerTwo)
