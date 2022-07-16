@@ -1,9 +1,15 @@
 body {
   background-color: #013750;
 }
-
+img {
+  width: 70%;
+}
 input {
   width: 80%;
-  margin-inline: 1rem;
-  margin: 0 auto;
+  margin: 1rem auto;
+}
+
+#form {
+  background-color: rgb(76, 153, 219);
+  border-radius: 3rem;
 }

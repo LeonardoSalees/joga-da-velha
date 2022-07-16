@@ -1,21 +1,25 @@
 export let playerOne = {
   name: '',
   isPlaying: false,
-  form: 'X',
+  form: '',
   points: 0
 }
 
 export let playerTwo = {
   name: '',
   isPlaying: false,
-  form: 'O',
+  form: '',
   points: 0
 }
 
-let playerOneString = localStorage.getItem('playerOne')
+let playerOneName = localStorage.getItem('playerOneName')
+playerOne.name = playerOneName
 
-playerOne.name = playerOneString
+let playerTwoName = localStorage.getItem('playerTwoName')
+playerTwo.name = playerTwoName
 
-let playerTwoString = localStorage.getItem('playerTwo')
-let playerTwoToObject = playerTwoString
-playerTwo.name = playerTwoToObject
+let playerOneForm = localStorage.getItem('playerOneForm')
+playerOne.form = playerOneForm
+
+let playerTwoForm = localStorage.getItem('playerTwoForm')
+playerTwo.form = playerTwoForm

@@ -9,7 +9,7 @@ let contentGanhador = document.getElementById('css-transition-win')
 
 export function showMessageToWinner() {
   addClassActive()
-  spanWinner.innerText = `O(A) Ganhador(a) foi : ${winner}`
+  spanWinner.innerText = `O(A) Ganhador(a) foi: ${winner}`
 }
 export function showMessageDraw() {
   addClassActive()
