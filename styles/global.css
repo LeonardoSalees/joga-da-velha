@@ -66,6 +66,9 @@ input {
   align-items: center;
   justify-content: center;
 }
+button {
+  border-radius: none;
+}
 .button {
   width: 70%;
   font-size: 1.8rem;
@@ -79,6 +82,7 @@ input {
 
 .inline {
   display: flex;
+  flex-direction: row;
   margin-block: 0.2rem;
 }
 

@@ -14,12 +14,17 @@
 #jogador {
   color: white;
   background-color: black;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 3rem;
   height: 40rem;
+  border-radius: 2rem;
+  font-family: sans-serif;
 }
 
 input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   height: 10rem;
@@ -95,5 +100,3 @@ input:disabled {
   opacity: 1;
   visibility: 1;
 }
-
-
